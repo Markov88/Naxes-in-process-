@@ -1,0 +1,281 @@
+html {
+    font: 14px/1.2 Verdana, sans-serif;
+}
+
+body {
+    background-image: url("./images/car1.jpg");
+    background-size: cover;
+    margin: 0;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 675px;
+    height: auto;
+    position: relative;
+    top: 2rem;
+    margin-bottom: auto;
+    background-size: 56.8px auto;
+    -webkit-box-shadow: 0px 5px 12px -4px rgba(0, 0, 0, 0.78);
+    box-shadow: 0px 5px 12px -4px rgba(0, 0, 0, 0.78);
+}
+
+.card .media {
+    position: relative;
+    overflow: hidden;
+}
+
+.card .media:after {
+    display: block;
+    content: '';
+    padding-top: 46.5%;
+}
+
+.card .media img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.border {
+    background: linear-gradient(90deg, rgba(248, 186, 73) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 0), rgba(255, 255, 255, 255);
+    margin: 0;
+    padding: 0.3rem;
+    background-size: 56.2px auto;
+}
+
+.card .content {
+    position: relative;
+    background: #484848;
+    height: 120px;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    width: inherit;
+    min-width: inherit;
+    height: 5rem;
+    background: #474944;
+    opacity: 0.8;
+    bottom: 2.5rem ;    
+    text-align: center;
+    align-items: center;
+    font: 10px/1.5 Verdana;
+    color: white;
+    border-radius: 0.6rem;
+}
+
+.popup p {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    margin: 0.5rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.triangle {
+    bottom: -0.7rem;
+    position: absolute; 
+    width: 0;
+    height: 0;
+    margin:auto;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #474944;
+}
+
+.but a {
+    display: flex;
+    text-decoration: none;
+}
+
+.but a p {
+    padding: 0;
+    margin: auto;
+    font-size: 10px;
+    letter-spacing: 0;
+    color: #3B3934;
+}
+
+.but {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    position: absolute;
+    bottom: 0.7rem;
+    right: 1rem;
+    width: 8.3vw;
+    min-width: 6.4rem;
+    height: 3.5vh;
+    border: 1px solid #A5A5A5;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    background: #F5F5F5;
+    box-shadow: 4px 4px 5px 0px rgba(128, 128, 128, 1);
+}
+
+.but:hover .popup {
+    display: flex;
+}
+
+#send {
+    position: relative;
+    left: 1rem;
+    background-image: linear-gradient(to bottom, #fabf57, #f9b549, #f8aa3b, #f89f2c, #f7941d);
+    color: #474944;
+    padding: 0.6rem 3.5rem;
+    border-radius: 0.5rem;
+    border: 0.5px solid #DB8C21;
+    cursor: pointer;
+    font-size: 18px;
+    outline: none;
+    font-weight: bold;
+    letter-spacing: normal;
+    -webkit-box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.33);
+    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.33);
+}
+
+.fas {
+    color: #F6BA4C;
+    font-size: 15px;
+    margin-right: 0.2rem;
+}
+
+.field .but2 .fas:last-of-type {
+    color: #474944;
+    position: relative;
+    left: 3rem;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.field .check {
+    margin-top: 0.2rem;
+    color: white;
+    font-size: xx-small;
+    cursor: pointer;
+}
+
+#check {
+    position: relative;
+    top: 3px;
+}
+
+.field a {
+    color: white;
+    text-decoration: underline;
+}
+
+#code {
+    width: 3rem;
+    min-width: 1rem;
+}
+
+#tel {
+    margin-left: 0.45rem;
+    width: 9.4rem;
+    min-width: 4.5rem;
+}
+
+.input input:nth-child(2) {
+    position: relative;
+    left: 4px;
+}
+
+::placeholder, select option, #country {
+    color: #464646;
+}
+
+.input input, #country {
+    width: 13rem;
+    height: 2.3rem;
+    padding: 0.3rem;
+    background: #E8E8E8;
+    outline: none;
+    min-width: 6rem;
+    margin: 0;
+}
+
+.input {
+    padding-left: 1.2rem;
+}
+
+.field:first-of-type {
+    position: relative;
+    bottom: 0.6rem;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: inherit;
+}
+
+@media screen and (max-width:690px) and (min-width:489px) {
+    .input {
+        padding-left: 0.7rem;
+    }
+    .input input {
+        width: 20vw;
+    }
+    .input #country {
+        width: 20vw;
+    }
+    #tel {
+        width: 15vw;
+    }
+    #code {
+        width: 4vw;
+    }
+    .field {
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 489px) {
+    body {
+        height: 100vh;
+    }
+    .but, .border    {              
+        display: none;
+    }
+    .card {
+        padding: 0 0.2rem;
+    }
+    .card .media:after {
+        display: block;
+        content: '';
+        padding-top: 66.5%;
+    }
+    .card .media img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .card .content {
+        height: 60vh;
+    }
+  .field{ 
+        padding: 0.5rem;
+       
+   }
+}
